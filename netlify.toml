@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"  # Reemplaza con el comando para construir tu sitio
+  publish = "dist"           # Reemplaza con la carpeta de salida de tu sitio estático
+
+[context.production]
+  command = "npm run build"  # Comando para construir en el entorno de producción
+  publish = "dist"           # Carpeta de salida para el entorno de producción
+
+[context.deploy-preview]
+  command = "npm run build"  # Comando para construir en previsualizaciones de implementación
+  publish = "dist"           # Carpeta de salida para previsualizaciones
+
+[context.branch-deploy]
+  command = "npm run build"  # Comando para construir en implementaciones por rama
+  publish = "dist"           # Carpeta de salida para implementaciones por rama
