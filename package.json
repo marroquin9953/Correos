@@ -4,7 +4,7 @@
     "description": "Descripción de mi proyecto",
     "main": "index.php",
     "scripts": {
-      "build": "echo 'Ejecutando script de construcción...'",
+      "build": "php construir.php",
       "start": "php -S localhost:8000"
     },
     "devDependencies": {},
