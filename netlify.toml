@@ -12,6 +12,7 @@
   [context.environment]
     PHP_VERSION = "7.4"
 
+
 [context.deploy-preview]
   command = "php construir.php"
   functions = "funciones/"
