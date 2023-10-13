@@ -13,3 +13,10 @@
 [context.branch-deploy]
   command = "npm run build"  # Comando para construir en implementaciones por rama
   publish = "dist"           # Carpeta de salida para implementaciones por rama
+  
+[build]
+  command = "php construir.php"
+  functions = "funciones/"
+  publish = "publico/"
+  [build.environment]
+    PHP_VERSION = "7.4"
